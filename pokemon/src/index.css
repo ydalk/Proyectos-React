@@ -22,6 +22,10 @@ code {
   height: 250px;
 }
 
+h1{
+  color: aliceblue;
+}
+
 .card h2{
     color: aliceblue;
     font-size: 40px;

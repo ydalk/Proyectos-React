@@ -2,9 +2,12 @@ import Tarjeta from "./Tarjeta";
 
 const PokemonElectric = ({tipo}) => {
   return (
-    <Tarjeta 
-        tipo = {tipo}
-      />
+    <>
+      <h1>Pokemon Electric</h1>
+      <Tarjeta 
+          tipo = {tipo}
+        />
+    </>
   )
 }
 
