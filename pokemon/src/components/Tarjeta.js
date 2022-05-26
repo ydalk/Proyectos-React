@@ -3,7 +3,7 @@ const Tarjeta = ({tipo}) => {
     <div className="mainCard" >
         {
             tipo.map(item =>
-            <div className="card">
+            <div className="card" key={item.id}>
                 <h2>{item.pokemonName}</h2>
                 <img src={item.avatar} alt={item.pokemonName}/>
             </div>
