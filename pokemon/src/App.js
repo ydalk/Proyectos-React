@@ -1,11 +1,12 @@
 import './App.css';
 import { useState } from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './navigation/Navbar';
 import PokemonRock from './components/PokemonRock';
 import {pokemonData}  from './Data/PokemonData';
 import PokemonWater from'./components/PokemonWater'
 import PokemonFire from './components/PokemonFire';
 import PokemonElectric from './components/PokemonElectric';
+import PokemonCard from './components/PokemonCard';
 
 function App() {
 
@@ -38,7 +39,8 @@ function App() {
       />
       {
         state
-      }      
+      }   
+
     </div>
   );
 }
