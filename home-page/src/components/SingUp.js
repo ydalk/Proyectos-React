@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Sing.css'
 
 const SingUp = ({ userRegistry }) => {
 
@@ -36,7 +37,7 @@ const SingUp = ({ userRegistry }) => {
               type="password"
               onChange={(e)=> setPassword(e.target.value)}
           />
-          <button type="submit">{isSent ? "info Submitted" : "Send"}</button>
+          <button className="btn" type="submit">{isSent ? "info Submitted" : "Send"}</button>
     </form>
   )
 }

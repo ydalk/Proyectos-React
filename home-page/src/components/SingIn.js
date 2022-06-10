@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Sing.css'
 
 const SingIn = ({ userInfo }) => {
 
@@ -31,7 +32,7 @@ const SingIn = ({ userInfo }) => {
               type="password"
               onChange={(e)=> setSignIn({...signIn, password: e.target.value})}
             />
-                <button type="submit">Send</button>
+                <button className="btn" type="submit">Send</button>
           </form>
         } 
     </>

@@ -29,7 +29,7 @@ const Navbar = () => {
                 <button onClick={()=> handlerView("sign_up")}>Sign Up</button>
                 <button onClick={()=> handlerView("sign_in")}>Sign In</button>
             </nav>
-            <div className='body    ' >
+            <div className='body'>
                 {
                     view
                 }

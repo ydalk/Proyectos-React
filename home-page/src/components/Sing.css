@@ -1,0 +1,14 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: 12px 20px;
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+.btn{
+    width: 25%;
+    background-color: darkgray;
+    color: #162955;
+}
