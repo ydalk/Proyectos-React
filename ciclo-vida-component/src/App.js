@@ -1,32 +1,33 @@
 import './App.css';
-import CicloClase from './class/CicloClase';
+import CicloClase from './components/CicloClase';
 import { useState } from 'react';
 import CicloFuncional from './components/CicloFuncional';
-//import CicloFuncional from './CicloFuncional';
+import BotonChange from './components/BotonChange';
 
 
 
 function App() {
 
-  const [state, setState] = useState();
+  const [state, setState] = useState("calse");
   
-  
-  const changeComponent =(tipo)=>{
+  //const changeComponent =(arg)=>{
     
-    if(tipo === "calse"){
-        setState(<CicloClase />)
-    }else if (tipo === "function") {
-        setState(<CicloFuncional />)
-    } 
-  }
+  //   if(arg === "calse"){
+  //       setState(<CicloClase 
+  //         arg = "Funcional"
+  //       />)
+  //   }else if (arg === "funcional") {
+  //       setState(<CicloFuncional
+  //       arg = "clase"
+  //       />)
+  //   } 
+  // }
+
   
   return (
     <div className="App">
-      <button onClick={()=>changeComponent("calse")}> Componente Clase </button>
-      <button onClick={()=>changeComponent("function")}> Componente Funcional </button>
-      {
-        state
-      }     
+      <BotonChange />
+             
     </div>
   );
 }

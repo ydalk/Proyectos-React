@@ -1,0 +1,23 @@
+nav{
+    background: radial-gradient(#061539, transparent);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #162955;
+    margin: auto;
+}
+
+.body{
+    color: aliceblue;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+}
