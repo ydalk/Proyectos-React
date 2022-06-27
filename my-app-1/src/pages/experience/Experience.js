@@ -1,15 +1,26 @@
 import React from 'react'
 import {data} from '../../data/data'
 import Education from '../../componentes/Education'
+import styled from 'styled-components'
+
+const Datos = styled.div `
+
+  display: block;
+  margin: 100px auto;
+  width: 300px;
+  text-align: justify;
+  color: white
+
+`
 
 const Experience = () => {
   return (
-    <div className="tarjeta" >
+    <Datos >
         <Education 
             title = "Education:"
             info={data.education}
           />
-    </div>
+    </Datos>
   )
 }
 

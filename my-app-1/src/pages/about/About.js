@@ -2,14 +2,22 @@ import React from 'react'
 import Info from '../../componentes/Info'
 import Bio from '../../componentes/Bio'
 import {data} from '../../data/data'
+import styled from 'styled-components'
 
+const Datos = styled.div `
+
+  display: block;
+  margin: 100px auto;
+  width: 300px;
+  text-align: justify;
+  color: white
+
+`
 
 const About = () => {
   return (
     <>
-      <div className="tarjeta">
-        
-        <div className="datos">
+        <Datos >
           <Info 
             name = {data.personalData.name}
             lastname = {data.personalData.lastname}
@@ -19,8 +27,7 @@ const About = () => {
           <Bio
             bio = {data.bio}
           />
-        </div>
-      </div>   
+        </Datos>
     </>
   )
 }

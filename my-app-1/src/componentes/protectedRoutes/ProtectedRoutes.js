@@ -4,7 +4,7 @@ import { Outlet, Navigate } from 'react-router-dom'
 const ProtectedRoutes = ({isLogged}) => {
 
     if(isLogged){
-        return <Outlet />
+        return <Outlet/>
     }else{
         return <Navigate to={"/login"} />
     }

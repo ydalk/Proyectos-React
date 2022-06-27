@@ -2,6 +2,7 @@ const Info = ({name, lastname, age, nationality}) =>{
     return(
         <article>
             <h3>Personal Information</h3>
+            <br />
             <ul>
                 <p>Name: {name}</p>                       
                 <p>Lastname: {lastname}</p>                       
