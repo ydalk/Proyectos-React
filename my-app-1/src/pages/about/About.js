@@ -2,17 +2,7 @@ import React from 'react'
 import Info from '../../componentes/Info'
 import Bio from '../../componentes/Bio'
 import {data} from '../../data/data'
-import styled from 'styled-components'
-
-const Datos = styled.div `
-
-  display: block;
-  margin: 100px auto;
-  width: 300px;
-  text-align: justify;
-  color: white
-
-`
+import {Datos} from '../registerStyle';
 
 const About = () => {
   return (

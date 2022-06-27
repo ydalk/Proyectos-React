@@ -1,19 +1,8 @@
 import React from 'react'
 import {data} from '../../data/data'
 import Avatar from '../../componentes/Avatar'
-import styled from 'styled-components'
+import {Tarjeta, MyH1} from '../registerStyle';
 
-const Tarjeta = styled.div `
-
-  display: flex;
-  align-items: center;
-  margin: 150px;
-  justify-content: center;
-
-`
-const MyH1 = styled.h1 `
-  color: white;
-`
 
 const Home = () => {
   return (
