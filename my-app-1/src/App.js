@@ -5,10 +5,11 @@ import About from './pages/about/About';
 import Movies from './pages/movies/Movies';
 import Experience from './pages/experience/Experience';
 import Register from './pages/register/Register'
-import Login from './pages/login/Login'
+import Login from './pages/register/Login'
 import ProtectedRoutes from './componentes/protectedRoutes/ProtectedRoutes';
 import Layout from './componentes/layout/Layout';
 import { useState } from 'react';
+import SingUp from './pages/register/SingUp';
 
 function App() {
 
@@ -20,8 +21,10 @@ function App() {
       <BrowserRouter >
         <Layout>
           <Routes>
-            <Route path='/register' element={<Register  setIsRegister = {setIsRegister}/>}/>
-            <Route path='/login' element={<Login setIsLogged = {setIsLogged} isRegister = {isRegister}/>}/>
+            <Route path='/register' element={<Register />}>
+              <Route path='/register/singup' element={<SingUp setIsRegister = {setIsRegister}/>}/>
+              <Route path='/register/login' element={<Login setIsLogged = {setIsLogged} isRegister = {isRegister}/>}/>
+            </Route>
             <Route element={<ProtectedRoutes isLogged = {isLogged} />}>
               <Route path="/home" element={<Home />}  />
               <Route path="/about" element={<About />}  />

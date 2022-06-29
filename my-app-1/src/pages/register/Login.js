@@ -26,7 +26,7 @@ const Login = ({setIsLogged, isRegister}) => {
             </>
         ) 
     }else{
-        return <Navigate to={"/register"}/>
+        return <Navigate to={"/register/singup"}/>
     }
 
 }

@@ -1,10 +1,27 @@
 import styled from 'styled-components';
 
+export const Wraper = styled.div `
+    display: flex;
+    margin: 50px;
+
+`
+
+export const Container = styled.div `
+    margin: 150px auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px #67a6c7;
+    box-shadow: 5px 5px 40px 10px #67a6c7;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    `
+
 export const MyForm = styled.form `
     display: flex;
     flex-direction: column;
     width: 400px;
-    margin: 200px auto;
+    margin: 150px auto;
     padding: 20px;
     border-radius: 10px;
     border: solid 1px #67a6c7;
@@ -15,7 +32,6 @@ export const MyInput = styled.input `
     border-radius: 5px;
     margin: 10px;
     border: solid 1px #67a6c7;
-
 `
 
 export const MyH2 = styled.h2 `

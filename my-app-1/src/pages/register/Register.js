@@ -1,32 +1,25 @@
-import { useNavigate, Outlet } from 'react-router-dom'
-import {MyForm, MyH2, MyInput, MyButton } from '../registerStyle';
+import React from 'react';
+import { useNavigate, Outlet } from 'react-router-dom';
+import { Container, MyButton, Wraper } from '../registerStyle';
 
-
-
-const Register = ({setIsRegister}) => {
+const Register = () => {
 
     const navigate = useNavigate();
 
-    const handlerSubmit = (e)=>{
-        e.preventDefault();
-        setIsRegister(true);
-        navigate("/login");
-        
-    } 
-
-    return (
-        <>
-            <Outlet/>
-            <MyForm onSubmit={handlerSubmit}>
-                <MyH2> Registro </MyH2>
-                <MyInput placeholder='name'/>
-                <MyInput placeholder='email'/>
-                <MyInput placeholder='password'/>
-                <MyButton>Sing up</MyButton>
-            </MyForm>
-        </>
-    )
-   
+  return (
+    <Wraper>
+      <Container>
+        <p>¡ Bienvenido !</p>
+        <p>Puedes ingresar con tu cuenta.</p>
+        <br/>
+        <p>Si aún no haces parte del portal, Registrarte.</p>
+        <MyButton onClick={()=> navigate("/register/login")}>Ingresar</MyButton>
+        <MyButton onClick={()=> navigate("/register/singup")}>Registrarse</MyButton>
+        <h6>¿Olvisate tu contraseña?</h6>
+      </Container>
+      <Outlet/>
+    </Wraper>
+  )
 }
 
 export default Register
